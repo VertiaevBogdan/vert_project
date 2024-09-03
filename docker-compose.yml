@@ -1,0 +1,38 @@
+volumes:
+  vert_project_local_postgres_data: {}
+  vert_project_local_postgres_data_backups: {}
+
+
+services:
+  django:
+    build:
+      context: .
+      dockerfile: ./compose/local/django/Dockerfile
+    image: vert_project_local_django
+    container_name: vert_project_local_django
+    depends_on:
+      - postgres
+    volumes:
+      - .:/app:z
+    env_file:
+      - ./.envs/.local/.django
+      - ./.envs/.local/.postgres
+    ports:
+      - '8000:8000'
+    command: /start
+
+  postgres:
+    build:
+      context: .
+      dockerfile: ./compose/production/postgres/Dockerfile
+    image: vert_project_production_postgres
+    container_name: vert_project_local_postgres
+    volumes:
+      - vert_project_local_postgres_data:/var/lib/postgresql/data
+      - vert_project_local_postgres_data_backups:/backups
+    env_file:
+      - ./.envs/.local/.postgres
+    ports:
+      - '5432:5432'
+
+
