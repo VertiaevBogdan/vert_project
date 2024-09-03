@@ -35,4 +35,18 @@ services:
     ports:
       - '5432:5432'
 
+  frontend:
+    container_name: frontend
+    restart: always
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    image: vert_project_frontend_image
+    depends_on:
+      - django
+    volumes:
+      - ./frontend/nginx:/etc/nginx/conf.d
+    ports:
+      - '81:80'
+
 
