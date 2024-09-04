@@ -40,13 +40,17 @@ services:
     restart: always
     build:
       context: ./frontend
-      dockerfile: Dockerfile
+      dockerfile: Dockerfile.dev
     image: vert_project_frontend_image
     depends_on:
       - django
     volumes:
-      - ./frontend/nginx:/etc/nginx/conf.d
+#      - ./frontend/nginx:/etc/nginx/conf.d
+        - ./frontend:/app
+        - /app/node_modules
     ports:
-      - '81:80'
+#      - '81:80'
+      - '3000:5173'
+    command: ["npm", "run", "dev", "--", "--host", "0.0.0.0"]
 
 
