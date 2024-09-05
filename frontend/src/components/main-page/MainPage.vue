@@ -1,11 +1,16 @@
 <template>
-  вфлврфрв
+  <MainHeader/>
 </template>
 
 <script>
+import MainHeader from '@/components/main-page/main-header/MainHeader.vue'
+
 export default {
-  data() {
-    return {}
+  components: {
+    MainHeader,
+  },
+  setup() {
+
   }
 }
 </script>

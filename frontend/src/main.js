@@ -5,6 +5,7 @@ import vuetify from './plugins/vuetify'
 import { loadFonts } from './plugins/webfontloader'
 import 'vuetify/_styles.scss'
 import MainHeader from './components/main-page/main-header/MainHeader.vue'
+import './assets/scss/global.scss'
 
 loadFonts()
 
