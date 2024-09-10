@@ -21,6 +21,9 @@
     transition: color 0.2s ease-in;
   }
 
+  &--light {
+    color: $main-text-color !important;
+  }
 
   &--is-signup {
     background-color: $primary-color;

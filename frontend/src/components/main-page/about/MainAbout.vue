@@ -6,13 +6,13 @@
       <p class="mb-2-em">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, aut debitis est explicabo itaque molestias necessitatibus optio quasi quidem sunt.</p>
       <div>
         <v-btn
-        class="nav_link--is-signup"
+        class="nav_link--is-signup mr-1-em"
         text="Sign Up"
         text-color="white"
         size="large"
       />
       <v-btn
-        class="nav_link"
+        class="nav_link--light"
         text="Learn More"
         size="large"
         variant="outlined"
@@ -33,7 +33,7 @@ export default {
 <style lang="scss">
 @import "@/assets/scss/global.scss";
 .nav_link {
-  color: $main-text-color !important;
+  color: $main-text-color;
   border-color: $primary-color;
 }
 
