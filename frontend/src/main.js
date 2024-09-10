@@ -11,4 +11,4 @@ loadFonts()
 
 const app = createApp(App).use(router).use(vuetify);
 app.mount('#app');
-app.component('header', MainHeader);
+app.component('MainHeader', MainHeader);

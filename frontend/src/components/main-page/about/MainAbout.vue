@@ -1,9 +1,9 @@
 <template>
   <div class="wrapper">
-    <div class="about_content">
-      <h3 class="primary-color bold">About Us</h3>
+    <section class="about_content">
+      <h3 class="primary-color bold mb-2-em">About Us</h3>
       <h1 class="about_main_title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, quaerat.</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, aut debitis est explicabo itaque molestias necessitatibus optio quasi quidem sunt.</p>
+      <p class="mb-2-em">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, aut debitis est explicabo itaque molestias necessitatibus optio quasi quidem sunt.</p>
       <div>
         <v-btn
         class="nav_link--is-signup"
@@ -18,7 +18,7 @@
         variant="outlined"
       />
       </div>
-    </div>
+    </section>
   </div>
 </template>
 
