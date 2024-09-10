@@ -1,5 +1,10 @@
 .about_content {
+
+}
+
+.about_content-left {
   max-width: 50%;
+  margin-top: 5em;
 }
 
 .about_main_title {
@@ -9,3 +14,27 @@
   margin-bottom: 1em;
 }
 
+.about-main-img {
+  max-width: 25em;
+  margin-bottom: 5em;
+  margin-left: 3em;
+  position: relative;
+  z-index: 2;
+}
+
+.about-imgs {
+  background: url("@/public/about/Rectangle.svg") no-repeat center;
+  width: 100%;
+  justify-content: center;
+  position: relative;
+}
+
+.about-vector {
+  width: 100%;
+  position: absolute;
+  top: -1; // располагайте относительно родительского контейнера
+  left: 0;
+  z-index: 1;
+  background: url("@/public/about/Vector.svg") no-repeat center;
+  margin-top: 5em;
+}
