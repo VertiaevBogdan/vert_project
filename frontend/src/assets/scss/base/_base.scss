@@ -47,6 +47,10 @@ p {
   margin-bottom: 2em;
 }
 
+.mb-4-em {
+  margin-bottom: 4em;
+}
+
 .mr-1-em {
   margin-right: 1em;
 }
@@ -61,4 +65,13 @@ p {
 
 .ml-2-em {
   margin-left: 2em;
+}
+
+.h-expressive {
+  color: $primary-color;
+  font-weight: bold;
+}
+
+.h-dark {
+  color: #0a0a0b;
 }

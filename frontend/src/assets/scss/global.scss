@@ -1,10 +1,11 @@
 //  modules
 @import "_variables";
 
-
+// main-page
 @import "header/_header";
 @import "base/_base";
 @import "about/_about";
+@import "preview/_preview";
 
 //zeroing
 @import "_zeroing";

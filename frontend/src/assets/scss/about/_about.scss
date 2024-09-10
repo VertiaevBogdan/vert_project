@@ -1,7 +1,3 @@
-.about_content {
-
-}
-
 .about_content-left {
   max-width: 50%;
   margin-top: 5em;
@@ -32,7 +28,7 @@
 .about-vector {
   width: 100%;
   position: absolute;
-  top: -1; // располагайте относительно родительского контейнера
+  top: -1;
   left: 0;
   z-index: 1;
   background: url("@/public/about/Vector.svg") no-repeat center;
