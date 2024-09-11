@@ -1,6 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import App from '@/App.vue'
-import MainHeader from '@/components/main-page/main-header/MainHeader.vue'
 
 
 const router = createRouter({
@@ -9,7 +8,7 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: MainHeader
+      component: App
     },
   ]
 })

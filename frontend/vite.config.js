@@ -8,9 +8,19 @@ import vuetify from 'vite-plugin-vuetify'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  // css: {
+  //   preprocessorOptions: {
+  //     scss: {
+  //       additionalData: '@import "@/assets/scss/global.scss";'
+  //     }
+  //   }
+  // },
   plugins: [
     vue(),
-    vuetify({ autoImport: true }),
+    vuetify(
+      { autoImport: true },
+      { styles: 'src/assets/scss/global.scss' }
+    )
   ],
   resolve: {
     alias: {
