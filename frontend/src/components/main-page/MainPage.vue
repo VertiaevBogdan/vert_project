@@ -1,20 +1,23 @@
 <template>
   <MainHeader/>
   <MainAbout/>
-  <EducationPreview/>
+  <MainPreview/>
+  <MainContact/>
 </template>
 
 <script>
 import MainHeader from '@/components/main-page/header/MainHeader.vue'
 import MainAbout from '@/components/main-page/about/MainAbout.vue'
-import EducationPreview from '@/components/main-page/education-preview/MainPreview.vue'
+import MainPreview from '@/components/main-page/education-preview/MainPreview.vue'
+import MainContact from '@/components/main-page/contact/MainContact.vue'
 
 
 export default {
   components: {
     MainHeader,
     MainAbout,
-    EducationPreview,
+    MainPreview,
+    MainContact
   },
   setup() {
 
